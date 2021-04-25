@@ -33,26 +33,27 @@
 
 .farmContainer>p {
   color: white;
+  text-align: center;
 }
 
-.centerGif {
-  max-height: 500px;
+#centerGif {
+  min-height: 700px;
   grid-area: centerGif;
   margin: auto;
 }
 
-.drinking {
+#drinking {
   grid-area: drinking;
 }
 
-.research {
+#research {
   grid-area: research;
 }
 
-.messages {
+#messages {
   grid-area: messages;
 }
 
-.textiles {
+#textiles {
   grid-area: textiles;
 }
