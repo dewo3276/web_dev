@@ -20,8 +20,9 @@
 
 .farmContainer {
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  "drinking drinking centerGif centerGif research research"
+  "messages messages centerGif centerGif textiles textiles";
   background-image: url("../img/potato_cover.jpg");
   background-repeat: no-repeat;
   min-height: 50vh;
@@ -30,18 +31,22 @@
 
 .centerGif{
   max-height: 500px;
-  grid-column-start: 3;
-  grid-row-start: 3;
+  grid-area: centerGif;
+  margin: auto;
 }
 
 .drinking{
+  grid-area: drinking;
 }
 
 .research{
+  grid-area: research;
 }
 
 .messages{
+  grid-area: messages;
 }
 
 .textiles{
+  grid-area: textiles;
 }
