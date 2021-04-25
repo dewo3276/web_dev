@@ -1,4 +1,4 @@
-.heavenlyContainer{
+.heavenlyContainer {
   display: flex;
   flex-direction: column;
   background-image: url("../img/heavenly_background.jpg");
@@ -12,16 +12,40 @@
   text-align: center;
 }
 
-.heavenlyContainer>img{
+.heavenlyContainer>img {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.farmContainer{
+.farmContainer {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-rows: auto;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px;
+  grid-template-areas:
+    "drinking drinking centerGif centerGif research research"
+    "textiles textiles centerGif centerGif messages messages";
   background-image: url("../img/potato_cover.jpg");
   min-height: 50vh;
   max-width: 100vw;
+}
+
+.centerGif{
+  grid-area: centerGif
+}
+
+.drinking{
+  grid-area: drinking;
+}
+
+.research{
+  grid-area: research;
+}
+
+.messages{
+  grid-area: messages;
+}
+
+.textiles{
+  grid-area: textiles;
 }
