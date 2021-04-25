@@ -1,0 +1,70 @@
+body {
+  background: #0378A6; }
+
+@font-face {
+  font-family: corn-dog,sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.sectionHeaders1, .sectionHeaders2 {
+  font-family: corn-dog;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-image: url("../../img/water.gif");
+  background-repeat: no-repeat;
+  background-color: #F2D5BB;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 40vh; }
+  .sectionHeaders1 h1, .sectionHeaders2 h1 {
+    font-size: 50px; }
+  .sectionHeaders1 img, .sectionHeaders2 img {
+    max-width: 500px; }
+
+.sectionHeaders2 {
+  background-image: url("../../img/water_flipped.gif");
+  background-position: right; }
+
+.sectionHeaders1:hover, .sectionHeaders2:hover {
+  background-image: url("../../img/water_stopped.png");
+  background-size: 500px auto;
+  transform: scale(1.025); }
+  .sectionHeaders1:hover h1, .sectionHeaders2:hover h1 {
+    text-shadow: 4px 4px 5px grey, -4px -4px 5px white; }
+  .sectionHeaders1:hover img, .sectionHeaders2:hover img {
+    box-shadow: 10px 10px 5px grey; }
+
+.sectionHeaders2:hover {
+  background-image: url("../../img/water_stopped_flipped.png");
+  background-size: 500px auto;
+  transform: scale(1.025); }
+  .sectionHeaders2:hover h1 {
+    text-shadow: 4px 4px 5px grey, -4px -4px 5px white; }
+  .sectionHeaders2:hover img {
+    box-shadow: -10px 10px 5px grey; }
+
+@media screen and (max-width: 800px) {
+  .sectionHeaders1 > img, .sectionHeaders2 > img {
+    max-width: 50vw; }
+  .sectionHeaders1 > h1, .sectionHeaders2 > h1 {
+    font-size: 30px; } }
+
+.titleBlock {
+  font-family: corn-dog;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  max-width: 72.5vw;
+  text-align: center;
+  border-style: double;
+  border-width: 20px;
+  padding: 20px;
+  background-image: linear-gradient(to right, #5bc2d9, #a7e4f2);
+  background-repeat: no-repeat; }
+  .titleBlock h1 {
+    font-size: 60px; }

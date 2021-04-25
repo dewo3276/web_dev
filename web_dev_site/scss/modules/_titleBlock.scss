@@ -1,0 +1,17 @@
+.titleBlock {
+  font-family: corn-dog;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  max-width: 72.5vw;
+  text-align: center;
+  border-style: double;
+  border-width: 20px;
+
+  h1 {
+    font-size: 60px;
+  }
+  padding: 20px;
+  background-image: $titleBlockBack;
+  background-repeat: no-repeat;
+}

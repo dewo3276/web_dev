@@ -1,0 +1,73 @@
+@font-face {
+  font-family: corn-dog,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sectionHeaders1 {
+  font-family: corn-dog;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-image: url("../../img/water.gif");
+  background-repeat: no-repeat;
+  background-color: $divBackground;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 40vh;
+
+  h1 {
+    font-size: 50px;
+  }
+  img{
+    max-width: 500px;
+  }
+}
+
+.sectionHeaders2 {
+  @extend .sectionHeaders1;
+  background-image: url("../../img/water_flipped.gif");
+  background-position: right;
+}
+
+.sectionHeaders1:hover {
+  background-image: url("../../img/water_stopped.png");
+  background-size: 500px auto;
+  transform: scale(1.025);
+
+  h1 {
+    text-shadow: 4px 4px 5px grey, -4px -4px 5px white;
+  }
+
+  img {
+    box-shadow: 10px 10px 5px grey;
+  }
+}
+
+.sectionHeaders2:hover {
+  background-image: url("../../img/water_stopped_flipped.png");
+  background-size: 500px auto;
+  transform: scale(1.025);
+  h1 {
+    text-shadow: 4px 4px 5px grey, -4px -4px 5px white;
+  }
+
+  img {
+    box-shadow: -10px 10px 5px grey;
+  }
+}
+
+
+@media screen and (max-width: 800px)
+{
+  .sectionHeaders1>img{
+    max-width: 50vw;
+  }
+  .sectionHeaders1>h1{
+    font-size: 30px;
+  }
+}
