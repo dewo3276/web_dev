@@ -8,15 +8,19 @@ function changeImageGif(value) {
   switch (value) {
     case 0:
     changer.src = "../img/potato_upRight.gif"
+    document.getElementById("researchpara").style.display="block"
       break;
     case 1:
     changer.src = "../img/potato_upLeft.gif"
+    document.getElementById("drinkingpara").style.display="block"
       break;
     case 2:
     changer.src = "../img/potato_downRight.gif"
+    document.getElementById("textilespara").style.display="block"
       break;
     case 3:
     changer.src = "../img/potato_downLeft.gif"
+    document.getElementById("messagespara").style.display="block"
       break;
     default:
     console.log("error");

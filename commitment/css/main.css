@@ -31,7 +31,7 @@
   max-width: 100vw;
 }
 
-.farmContainer>div>h1 {
+.farmContainer>div {
   color: white;
   text-align: center;
 }
