@@ -1,0 +1,68 @@
+@font-face {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sectionHeaders1 {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-color: $divBackground;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 40vh;
+
+  h1 {
+    font-size: 50px;
+  }
+  img{
+    max-width: 500px;
+  }
+}
+
+.sectionHeaders2{
+  @extend .sectionHeaders1
+}
+
+
+.sectionHeaders1:hover {
+  transform: scale(1.025);
+
+  h1 {
+    text-shadow: 4px 4px 5px grey, -4px -4px 5px white;
+  }
+
+  img {
+    box-shadow: 10px 10px 5px grey;
+  }
+}
+
+.sectionHeaders2:hover {
+  transform: scale(1.025);
+  h1 {
+    text-shadow: 4px 4px 5px grey, -4px -4px 5px white;
+  }
+
+  img {
+    box-shadow: -10px 10px 5px grey;
+  }
+}
+
+
+@media screen and (max-width: 800px)
+{
+  .sectionHeaders1>img{
+    max-width: 50vw;
+  }
+  .sectionHeaders1>h1{
+    font-size: 30px;
+  }
+}
