@@ -29,12 +29,10 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   max-width: 100vw;
-}
-
-.farmContainer>div {
   color: white;
   text-align: center;
 }
+
 .farmContainer>div>p {
   display: none;
 }
