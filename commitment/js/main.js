@@ -24,7 +24,6 @@ function changeImageGif(value) {
       break;
     default:
     console.log("error");
-
   }
 
 }
@@ -32,5 +31,6 @@ function changeImageGif(value) {
 
 function showfatman()
 {
-  document.getElementById('imgGod').style.display="block"
+  document.getElementById('runawayIMG').style.display="block"
+  document.getElementById('demonPotato').style.display="block"
 }

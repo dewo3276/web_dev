@@ -4,6 +4,13 @@
   font-style: normal;
 }
 
+.note{
+  border-style: dashed;
+  color: red;
+  font-size: 1.5em;
+  border-radius: 40px;
+}
+
 .godPotato {
   background-color: beige;
   min-height: 25vh;
@@ -13,14 +20,16 @@
   font-family: old-man-eloquent;
   font-size: 2em;
   text-align: center;
-  padding-top: 10vh;
   margin-left: 10vw;
 }
 
 .godPotato>img{
   display: none;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.runawayIMG{
+  margin-left: 50vw;
+  max-width: 50vw;
 }
 
 .heavenlyContainer {
