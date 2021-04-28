@@ -1,3 +1,7 @@
+html {
+  background: black;
+}
+
 @font-face {
   font-family: old-man-eloquent, sans-serif;
   font-weight: 400;
@@ -5,49 +9,87 @@
 }
 
 @keyframes demon {
-  0% {transform: rotate(35deg);}
-  12.5% {transform: rotate(25deg);}
-  25% {transform: rotate(0deg);}
-  37.5% {transform: rotate(-25deg);}
-  50% {transform: rotate(-35deg);}
-  62.5% {transform: rotate(-25deg);}
-  75% {transform: rotate(0deg);}
-  87.5% {transform: rotate(25deg);}
-  100% {transform: rotate(35deg);}
+  0% {
+    transform: rotate(35deg);
+  }
+
+  12.5% {
+    transform: rotate(25deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  37.5% {
+    transform: rotate(-25deg);
+  }
+
+  50% {
+    transform: rotate(-35deg);
+  }
+
+  62.5% {
+    transform: rotate(-25deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  87.5% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(35deg);
+  }
 }
 
-.note{
+.heavenlyContainer>p {
+  font-family: sans-serif;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+}
+
+.note {
   border-style: dashed;
+  text-align: center;
   color: red;
   font-size: 1.5em;
   border-radius: 40px;
 }
 
-.godPotato {
+#godPotato {
   background-color: beige;
   min-height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.godPotato>p {
+#godPotato>p {
   font-family: old-man-eloquent;
   font-size: 2em;
   text-align: center;
   margin-left: 10vw;
 }
-.godPotato>p>a{
-  color: black;
-  cursor: default;
+
+#godPotato>p>i {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-#demonPotato{
+#demonPotato {
   border-radius: 200px;
   display: none;
-  margin-right: 50vw;
-  max-width: 50vw;
+  margin-left: 10vw;
+  min-width: 30vw;
   animation: demon 2s infinite;
 }
 
-#runawayIMG{
+#runawayIMG {
   border-radius: 200px;
   display: none;
   margin-left: 50vw;
@@ -93,9 +135,7 @@
   display: none;
 }
 
-@media query {
-
-}
+@media query {}
 
 #centerGif {
   min-height: 700px;

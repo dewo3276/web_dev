@@ -31,6 +31,7 @@ function changeImageGif(value) {
 
 function showfatman()
 {
+  document.getElementById('godPotato').style.backgroundImage="url('../img/fire.gif')"
   document.getElementById('runawayIMG').style.display="block"
   document.getElementById('demonPotato').style.display="block"
 }
