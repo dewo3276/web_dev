@@ -4,6 +4,18 @@
   font-style: normal;
 }
 
+@keyframes demon {
+  0% {transform: rotate(35deg);}
+  12.5% {transform: rotate(25deg);}
+  25% {transform: rotate(0deg);}
+  37.5% {transform: rotate(-25deg);}
+  50% {transform: rotate(-35deg);}
+  62.5% {transform: rotate(-25deg);}
+  75% {transform: rotate(0deg);}
+  87.5% {transform: rotate(25deg);}
+  100% {transform: rotate(35deg);}
+}
+
 .note{
   border-style: dashed;
   color: red;
@@ -22,16 +34,22 @@
   text-align: center;
   margin-left: 10vw;
 }
-
-.godPotato>img{
-  display: none;
+.godPotato>p>a{
+  color: black;
+  cursor: default;
 }
 
 #demonPotato{
-  
+  border-radius: 200px;
+  display: none;
+  margin-right: 50vw;
+  max-width: 50vw;
+  animation: demon 2s infinite;
 }
 
 #runawayIMG{
+  border-radius: 200px;
+  display: none;
   margin-left: 50vw;
   max-width: 50vw;
 }
