@@ -28,6 +28,11 @@ function changeImageGif(value) {
 
 }
 
+function holyAnimation()
+{
+  document.getElementById('potatoWingsGif').style.animation="holy 5s 1"
+}
+
 
 function showfatman()
 {

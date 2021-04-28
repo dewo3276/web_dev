@@ -8,6 +8,14 @@ html {
   font-style: normal;
 }
 
+@keyframes holy {
+  0% {background: radial-gradient(circle at 50%, rgba(255, 255, 0, .45), rgba(255, 255, 0, 0))}
+  25% {background: radial-gradient(circle at 50%, rgba(255, 255, 0, .45), rgba(255, 255, 0, 0.25))}
+  50% {background: radial-gradient(circle at 50%, rgba(255, 255, 0, .45), rgba(255, 255, 0, 0.35))}
+  75% {background: radial-gradient(circle at 50%, rgba(255, 255, 0, .45), rgba(255, 255, 0, 0.25))}
+  100% {background: radial-gradient(circle at 50%, rgba(255, 255, 0, .45), rgba(255, 255, 0, 0))}
+}
+
 @keyframes demon {
   0% {
     transform: rotate(35deg);
@@ -44,6 +52,11 @@ html {
   100% {
     transform: rotate(35deg);
   }
+}
+
+#potatoWingsGif{
+  cursor: pointer;
+  border-radius: 100vw;
 }
 
 .heavenlyContainer>p {
@@ -135,7 +148,11 @@ html {
   display: none;
 }
 
-@media query {}
+.farmContainer>div{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  max-height: 40vh;
+}
 
 #centerGif {
   min-height: 700px;
