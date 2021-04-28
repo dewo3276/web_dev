@@ -28,3 +28,9 @@ function changeImageGif(value) {
   }
 
 }
+
+
+function showfatman()
+{
+  document.getElementById('imgGod').style.display="block"
+}
