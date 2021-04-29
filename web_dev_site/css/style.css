@@ -25,6 +25,12 @@ body {
     font-size: 50px; }
   .sectionHeaders1 img, .sectionHeaders2 img {
     max-width: 500px; }
+  .sectionHeaders1 iframe, .sectionHeaders2 iframe {
+    width: 500px;
+    height: 300px; }
+  .sectionHeaders1 a, .sectionHeaders2 a {
+    text-decoration: none;
+    color: black; }
 
 .sectionHeaders2 {
   background-image: url("../../img/water_flipped.gif");
